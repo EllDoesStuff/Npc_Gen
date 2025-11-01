@@ -7,22 +7,25 @@ first_name = ["John","Glix","Gorp","Spingle", "Gorgenspock","Jimspop","Timbop","
 last_name =["Wells","Lil'Jit","Pillars","Glingles","Pin","Shemeems","Greg","Slimps"]
 
 NPCnumb = int(input("How many NPC's would you like there to be?")) + 1
-increment = 1     
-
-#end statement
-if increment >= NPCnumb:
-    print("Goodbye!")
+increment = 0
 
 
 
-while NPCnumb > 0:
+
+
+while NPCnumb > -1:
     yes_or_no = input("Would you like to speak to an NPC?")
    #shows NPC
     if yes_or_no == "yes" or "Yes" or " yes" or " Yes" and NPCnumb != 0:
         print(f"You are speaking to {random.choice(first_name) + " " + random.choice(last_name)}. They have {random.randint(5,100)} attack, {random.randint(1,20)} defense, and {random.randint(10,200)} health. Their special number is {random.random()}")
         NPCnumb -= increment
         increment += 1
-    yes_or_no = input("Talk again?")
+el_fin = input("Finished?")
+#end statement
+if el_fin == "yes" or "Yes" or " yes" or " Yes":
+    print("Goodbye!")
+else:
+    print("Please try again if unsatisfied.")
 
 
 
