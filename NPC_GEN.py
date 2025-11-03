@@ -1,4 +1,4 @@
-import math
+
 import random
 import time
 
@@ -6,6 +6,7 @@ import time
 first_name = ["John","Glix","Gorp","Spingle", "Gorgenspock","Jimspop","Timbop","Spingleglorpjixjohn"]
 last_name =["Wells","Lil'Jit","Pillars","Glingles","Pin","Shemeems","Greg","Slimps"]
 
+#Makes certain number of NPC's
 NPCnumb = int(input("How many NPC's would you like there to be?")) + 1
 increment = 0
 
